@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataBuildToolJob",
+    "displayName": "pokemon_daily"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2ffc6501-6bc5-4826-aa10-4ce7933635c0"
+  }
+}
