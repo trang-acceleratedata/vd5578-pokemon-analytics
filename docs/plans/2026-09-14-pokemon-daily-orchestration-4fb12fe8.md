@@ -156,6 +156,19 @@ Append to `## Execution evidence`:
 
 ## Execution evidence
 
-Append-only log of task completion. One entry per task/step that reaches a deterministic gate.
+- [x] **Task 1, Step 2:** validate-airflow-dag.py exit 0 — `orchestration/pokemon_daily.ApacheAirflowJob/` — "ok: pokemon_daily.ApacheAirflowJob passed static validation"
+- [x] **Task 1, Step 2:** validate-databuildtooljob.py exit 0 — `orchestration/pokemon_daily.DataBuildToolJob/` — "ok: pokemon_daily.DataBuildToolJob passed static validation"
+- [x] **Task 1, Step 3:** git commit — Three artifacts staged and committed:
+  - `orchestration/pokemon_daily.ApacheAirflowJob/` (logicalId: 6f85938c-e9e7-4d07-a15b-7302b5151623)
+  - `orchestration/pokemon_daily.DataBuildToolJob/` (logicalId: 2ffc6501-6bc5-4826-aa10-4ce7933635c0)
+  - `orchestration/pokemon_bronze_dlt_runner.Notebook/` (logicalId: e7f4e649-d5df-4f7f-9c5d-1b3506a7dfe7)
 
-(To be appended during execution)
+**Task 1 Status: COMPLETE** — All artifacts generated, validated, and committed.
+
+**Task 2 Status: READY FOR EPHEMERAL DEPLOYMENT** — Committed artifacts are ready for sandbox run via:
+1. Package and import dbt job (DataBuildToolJob)
+2. Create and configure Airflow Job in ephemeral workspace
+3. Inject workspace id as Airflow Variable
+4. Restart Airflow environment
+5. Trigger DAG run via Airflow REST API
+6. Poll for terminal success (dlt_load → dbt_build → workload_succeeded)
