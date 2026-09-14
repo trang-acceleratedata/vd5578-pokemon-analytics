@@ -1,0 +1,5 @@
+{
+  "logicalId": "pokemon_daily_airflow_job",
+  "jobName": "pokemon_daily",
+  "namespace": "pokemon_analytics"
+}
