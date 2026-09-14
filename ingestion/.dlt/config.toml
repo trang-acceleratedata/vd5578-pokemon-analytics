@@ -1,0 +1,12 @@
+# Single dlt config for this ingestion project.
+#
+# The [destination.*] section names the DOMAIN resource. An Intent run retargets
+# it to the Ephemeral Workspace in the uploaded copy only (upload-to-onelake.py
+# --workspace-id/--warehouse-id/--lakehouse-id); the committed file is never
+# rewritten.
+#
+# PokeAPI is public, so this project declares no [sources.*] section at all.
+
+[destination.fabric]
+workspace_id = "b12dfe47-b3c6-4603-97bb-0057f68dc0e7"
+warehouse_id = "01e2a556-bf9c-4d5e-9436-5cf5e2991cd1"
