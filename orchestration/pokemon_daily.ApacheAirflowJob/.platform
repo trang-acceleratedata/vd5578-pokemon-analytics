@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "ApacheAirflowJob",
+    "displayName": "pokemon_daily"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4175f28a-d47c-4d81-955e-34b4353b74b9"
+  }
+}
