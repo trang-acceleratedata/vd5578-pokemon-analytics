@@ -47,7 +47,7 @@ DBT_JOB_NAME = "pokemon_transform"
 with DAG(
     dag_id="pokemon_daily",
     start_date=datetime(2026, 1, 1),
-    schedule=None,
+    schedule="0 6 * * *",  # Daily at 6:00 AM UTC
     catchup=False,
     max_active_runs=1,
 ) as dag:
