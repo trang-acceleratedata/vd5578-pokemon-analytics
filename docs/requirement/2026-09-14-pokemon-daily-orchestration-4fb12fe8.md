@@ -71,4 +71,4 @@ No pending or approved changes. This is the initial Requirement for a new orches
 
 ## Approvals
 
-**Requirement approval pending** — awaiting user confirmation that R-01@1, R-02@1, R-03@1 accurately capture the requested work before design phase proceeds.
+**Requirement approval** — R-01@1, R-02@1, R-03@1 approved 2026-09-14 07:46 UTC. Design records: `docs/design/pipelines/pokemon_daily.md`. Plan: `docs/plans/2026-09-14-pokemon-daily-orchestration-4fb12fe8.md`. Design stop approved 2026-09-14 07:46 UTC; proceeding to execution.
