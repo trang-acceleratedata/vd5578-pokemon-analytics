@@ -37,7 +37,7 @@ FABRIC_CONN_ID = "fabric_default"
 # Sent as the run-item POST body; the operator forwards job_params unchanged.
 DLT_JOB_PARAMS = json.dumps({"executionData": {"parameters": {
     "DOMAIN_SLUG": {"value": "pokemon-analytics", "type": "string"},
-    "PIPELINE": {"value": "pokemon_pipeline", "type": "string"},
+    "PIPELINE": {"value": "pokemon_pipeline.py", "type": "string"},
     "SECRET_STORE_LOCATION": {"value": "https://data-eng-key-vault.vault.azure.net/", "type": "string"},
     "CODE_LAKEHOUSE_NAME": {"value": "pokemon_wh", "type": "string"},
 }}})
