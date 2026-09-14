@@ -1,0 +1,9 @@
+{
+  "project": {
+    "projectType": "OneLake",
+    "folderPath": "dbt"
+  },
+  "command": {
+    "operation": "build"
+  }
+}
