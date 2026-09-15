@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: pokemon_weight_bands
+    description: Pokemon counts and average base experience by weight band.
+    columns:
+      - name: weight_band
+        tests: [unique, not_null]

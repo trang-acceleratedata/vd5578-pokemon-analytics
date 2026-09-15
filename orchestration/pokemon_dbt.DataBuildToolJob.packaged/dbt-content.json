@@ -1,0 +1,29 @@
+{
+ "properties": {
+  "name": "pokemon_dbt",
+  "typeProperties": {
+   "projectType": "Fabric",
+   "folderPath": "Code/dbt",
+   "profileType": "Fabric",
+   "build": {
+    "operation": "build",
+    "arguments": "--select +tag:default"
+   }
+  }
+ },
+ "profile": {
+  "profileType": "DataWarehouse",
+  "schema": "dbo",
+  "connectionSettings": {
+   "name": "ephm_pokemon_analytics_new_intent_27b1d3f9",
+   "properties": {
+    "type": "DataWarehouse",
+    "typeProperties": {
+     "workspaceId": "2cf7083d-e11b-4344-871c-03455b7027bb",
+     "artifactId": "dd0e885e-3c34-4d1a-96d1-654a80e90cec",
+     "endPoint": "zcoepygy7vhunaxjs7ut7gix3m-huepola34fcehby4ancvw4bhxm.datawarehouse.fabric.microsoft.com"
+    }
+   }
+  }
+ }
+}

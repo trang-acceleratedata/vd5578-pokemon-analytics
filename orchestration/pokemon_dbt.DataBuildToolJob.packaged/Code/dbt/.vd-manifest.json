@@ -1,0 +1,11 @@
+{
+ "sourceCommit": "bd73fc765c5077a24a8da66302cc52653c36da47",
+ "files": [
+  "Code/dbt/dbt_project.yml",
+  "Code/dbt/models/marts/pokemon_weight_bands.sql",
+  "Code/dbt/models/marts/schema.yml",
+  "Code/dbt/models/staging/schema.yml",
+  "Code/dbt/models/staging/stg_pokemon.sql"
+ ],
+ "contentHash": "c71eccda67d210c8647115783e5b694f024d34bbb4d6e066e2c954e6d44ed6d4"
+}

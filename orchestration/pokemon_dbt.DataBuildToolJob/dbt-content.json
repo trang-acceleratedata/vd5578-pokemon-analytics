@@ -1,0 +1,14 @@
+{
+  "properties": {
+    "name": "pokemon_dbt",
+    "typeProperties": {
+      "projectType": "Fabric",
+      "folderPath": "Code/dbt",
+      "profileType": "Fabric",
+      "build": {
+        "operation": "build",
+        "arguments": "--select +tag:default"
+      }
+    }
+  }
+}

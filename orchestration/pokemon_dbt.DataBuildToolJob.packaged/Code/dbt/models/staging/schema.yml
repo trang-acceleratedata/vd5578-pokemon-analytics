@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: Tables loaded by the dlt ingestion pipeline.
+    schema: bronze
+    tables:
+      - name: pokemon
+
+models:
+  - name: stg_pokemon
+    description: PokeAPI pokemon, typed.
+    columns:
+      - name: pokemon_id
+        tests: [unique, not_null]
+      - name: pokemon_name
+        tests: [not_null]

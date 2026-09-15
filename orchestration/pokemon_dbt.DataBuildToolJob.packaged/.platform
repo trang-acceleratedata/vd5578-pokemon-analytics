@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataBuildToolJob",
+    "displayName": "pokemon_dbt"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7b2efeb3-e7f9-48af-993d-a37fdbf4b766"
+  }
+}
